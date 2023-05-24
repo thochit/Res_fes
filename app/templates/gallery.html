@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ceramics Website - Gallery</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Gallery</h1>
+    <div class="image-container">
+        <img src="{{ url_for('static', filename='images/ceramic1.jpg') }}" alt="Ceramic Image 1">
+        <img src="{{ url_for('static', filename='images/ceramic2.jpg') }}" alt="Ceramic Image 2">
+        <img src="{{ url_for('static', filename='images/ceramic3.jpg') }}" alt="Ceramic Image 3">
+        <img src="{{ url_for('static', filename='images/ceramic4.jpg') }}" alt="Ceramic Image 4">
+    </div>
+    <a href="{{ url_for('home') }}" class="button">Back to Home</a>
+</body>
+</html>
